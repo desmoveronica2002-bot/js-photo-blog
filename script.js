@@ -37,3 +37,18 @@ fetch(endpoint)
         
     });
 })
+
+
+// PARTE 2 
+
+const overlay = document.getElementById('overlay');
+const bottoneChiudiOverlay = document.getElementById('chiudiOverlay');
+
+overlay.style.display = "block"; 
+
+
+// Chiudi overlay
+bottoneChiudiOverlay.addEventListener('click', () => {
+    overlay.style.display = "none"; 
+});
+

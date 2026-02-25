@@ -154,3 +154,17 @@ p {
         padding-right: 5%;
     }
 }
+
+
+/*--------------------OARTE 2 ---------------------*/
+
+/* Overlay */
+#overlay {
+    position: fixed; /* rimane fisso scrollando */
+    top: 0;
+    left: 0;
+    width: 100vw; /* 100% larghezza finestra */
+    height: 100vh; /* 100% altezza finestra */
+    background-color:rgba(250, 212, 212, 0.95); 
+    z-index: 9999; /* sopra tutti gli elementi (per il pallino) */
+}
