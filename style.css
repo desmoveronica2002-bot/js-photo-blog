@@ -1,5 +1,6 @@
 /*------------------font----------------------------*/
-@import url('https://fonts.googleapis.com/css2?family=Kavivanar&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Edu+TAS+Beginner&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Sometype+Mono&display=swap');
 /*---------------classi principali---------------------*/
 body {
     background-image: url("img/cork.png");
@@ -13,8 +14,7 @@ header {
     text-align: center;
     font-size: 60px;
     font-weight: 600;
-    font-style: italic;
-    font-family: 'Kavivanar', cursive;
+    font-family: 'Edu TAS Beginner', sans-serif;
 }
 
 .sfondo_bianco {
@@ -32,6 +32,7 @@ p {
     margin-top: 15px;
     font-style: italic;
     color: #444;
+    font-family: 'Sometype Mono', monospace;
 }
 /*---------------colori card-------------------*/
 .verde1{
