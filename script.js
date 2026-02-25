@@ -22,8 +22,8 @@ fetch(endpoint)
     <div class="col-12 col-md-6 col-lg-4">
         <div class="involucro_card">
             <img src="./img/pin.svg" alt="pallino" class="pallino">
-            <div class="card">
-                <img src="${url}" class="card-body" alt="...">
+            <div class="card card-body padding_basso">
+                <img src="${url}" alt="...">
                 <div class="card-body">
                     <p class="data">${date}</p>
                     <p class="titolo">${title}</p>
