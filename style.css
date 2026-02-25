@@ -16,7 +16,7 @@ header {
     font-weight: 600;
     font-family: 'Edu TAS Beginner', sans-serif;
 }
-
+/*
 .sfondo_bianco {
     background-color: white;
     padding: 15px;
@@ -27,6 +27,7 @@ header {
     color: rgba(255,255,255,0.5);
     text-align: center;
 }
+ */
 
 p {
     margin-top: 15px;
@@ -42,7 +43,9 @@ p {
     left: 45%;
 }
 
+
 /*---------------colori card-------------------*/
+/*
 .verde1{
     background-color: rgb(132, 201, 28);
 
@@ -67,9 +70,11 @@ p {
 .azzurro {
     background-color: rgb(116, 199, 224);
 }
+*/
 /*-------------adattaenti schermo--------------*/
 
 /* Mobile: fino a 576px */
+/*
 @media (max-width: 576px) {
     .sfondo{
         padding-top: 100px;
@@ -80,8 +85,9 @@ p {
         padding-right: 15%;
     }
 }
-
+*/
 /* Tablet: da 577px a 767px */
+/*
 @media (min-width: 577px){
     .sfondo{
         padding-top: 150px;
@@ -92,11 +98,14 @@ p {
         padding-right: 5%;
     }
 }
+*/
 
 /* Desktop: da 768px in su */
+/*
 @media (min-width: 768px) {
     .sfondo{
         padding-top: 150px;
         padding-bottom: 150px;
     }
 }
+*/
