@@ -34,6 +34,14 @@ p {
     color: #444;
     font-family: 'Sometype Mono', monospace;
 }
+
+.pallino {
+    display:block;
+    position:relative;
+    top: 20px;;
+    left: 45%;
+}
+
 /*---------------colori card-------------------*/
 .verde1{
     background-color: rgb(132, 201, 28);
