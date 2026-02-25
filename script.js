@@ -19,17 +19,19 @@ fetch(endpoint)
         const {title,date,url} = element;
 
         const markup = `
-        <div class="col-12 col-md-6 col-lg-4">
+    <div class="col-12 col-md-6 col-lg-4">
+        <div class="involucro_card">
             <img src="./img/pin.svg" alt="pallino" class="pallino">
             <div class="card">
-                <img src="${url}" class="card-img-top" alt="${title}">
+                <img src="${url}" class="card-body" alt="...">
                 <div class="card-body">
-                    <p>${date}</p>
-                    <p>${title}</p>
+                    <p class="data">${date}</p>
+                    <p class="titolo">${title}</p>
                 </div>
             </div>
         </div>
-        `;
+    </div>
+`;
         console.log(markup);
         cardContainer.insertAdjacentHTML('beforeend', markup);
         

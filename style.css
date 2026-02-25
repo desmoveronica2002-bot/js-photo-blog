@@ -27,22 +27,46 @@ header {
     color: rgba(255,255,255,0.5);
     text-align: center;
 }
- */
-
 p {
     margin-top: 15px;
     font-style: italic;
     color: #444;
     font-family: 'Sometype Mono', monospace;
 }
+*/
+.data {
+    font-style: italic;
+    color: #444;
+    font-family: 'Sometype Mono', monospace;
+}
+.titolo {
+    font-style: italic;
+    color: black;
+    font-family: 'Sometype Mono', monospace;
+    font-weight: bold; 
+    font-size: 20px;
+}
 
+
+.involucro_card {
+    position: relative;
+}
+
+.pallino {
+    position: absolute;
+    top: -15px;
+    left: 46%;
+    z-index: 10;
+}
+
+/*
 .pallino {
     display:block;
     position:relative;
     top: 20px;;
     left: 45%;
 }
-
+*/
 
 /*---------------colori card-------------------*/
 /*
