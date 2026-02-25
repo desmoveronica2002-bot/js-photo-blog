@@ -139,3 +139,10 @@ p {
     }
 }
 */
+
+@media (max-width: 576px) {
+    .padding {
+        padding-left: 15%;
+        padding-right: 15%;
+    }
+}
