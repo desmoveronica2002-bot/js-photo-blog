@@ -23,7 +23,7 @@ fetch(endpoint)
         <div class="involucro_card">
             <img src="./img/pin.svg" alt="pallino" class="pallino">
             <div class="card card-body padding_basso">
-                <img src="${url}" alt="...">
+                <img src="${url}" alt="..." class="imgOverlay" >
                 <div class="card-body">
                     <p class="data">${date}</p>
                     <p class="titolo">${title}</p>
@@ -36,10 +36,22 @@ fetch(endpoint)
         cardContainer.insertAdjacentHTML('beforeend', markup);
         
     });
+
+// PARTE 2     
+
+//facciamo sì che cliccando una qualunque foto. L’overlay ricompaia
+    const immaginiOverlay = document.querySelectorAll('.imgOverlay');
+
+    immaginiOverlay.forEach(img => {
+        img.addEventListener('click', () => {
+            overlay.style.display = "block";
+        });
+    });
+
+   
+
 })
 
-
-// PARTE 2 
 
 const overlay = document.getElementById('overlay');
 const bottoneChiudiOverlay = document.getElementById('chiudiOverlay');
