@@ -168,3 +168,8 @@ p {
     background-color:rgba(250, 212, 212, 0.95); 
     z-index: 9999; /* sopra tutti gli elementi (per il pallino) */
 }
+
+#overlayImg {
+    max-width: 50%;
+    max-height: 50%;
+}
