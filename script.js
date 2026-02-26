@@ -8,22 +8,44 @@ const endpoint = "https://lanciweb.github.io/demo/api/pictures/";
 const cardContainer = document.querySelector(".card-container"); //.card-container metto il punto perchè seleziono una classe e non un id
 
 
-fetch(endpoint)
-.then(res=>res.json())
-.then(data=>{
-    console.log(data);
+//fetch(endpoint)
+//.then(res=>res.json())
+//.then(data=>{
+//    console.log(data);
 
-    data.forEach(element => {
-        console.log(element)
+//    data.forEach(element => {
+//        console.log(element)
 
-        const {title,date,url} = element;
+//        const {title,date,url} = element;
 
-        const markup = `
+//        const markup = `
+//    <div class="col-12 col-md-6 col-lg-4">
+//        <div class="involucro_card">
+//            <img src="./img/pin.svg" alt="pallino" class="pallino">
+//            <div class="card card-body padding_basso">
+//                <img src="${url}" alt="..." class="imgOverlay" >
+//                <div class="card-body">
+//                    <p class="data">${date}</p>
+//                    <p class="titolo">${title}</p>
+//                </div>
+//            </div>
+//        </div>
+//    </div>
+//`;
+//        console.log(markup);
+//        cardContainer.insertAdjacentHTML('beforeend', markup);
+        
+//    });
+
+
+// funzuine che crea il markup
+function markup({ title, date, url }) {
+    return `
     <div class="col-12 col-md-6 col-lg-4">
         <div class="involucro_card">
             <img src="./img/pin.svg" alt="pallino" class="pallino">
             <div class="card card-body padding_basso">
-                <img src="${url}" alt="..." class="imgOverlay" >
+                <img src="${url}" alt="${title}" class="imgOverlay">
                 <div class="card-body">
                     <p class="data">${date}</p>
                     <p class="titolo">${title}</p>
@@ -31,9 +53,22 @@ fetch(endpoint)
             </div>
         </div>
     </div>
-`;
-        console.log(markup);
-        cardContainer.insertAdjacentHTML('beforeend', markup);
+    `;
+}
+
+
+
+
+fetch(endpoint)
+.then(res=>res.json())
+.then(data=>{
+    console.log(data);
+
+    data.forEach(element => {
+       
+        const card = markup(element);
+            console.log(card);
+            cardContainer.insertAdjacentHTML('beforeend', card);
         
     });
 
