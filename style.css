@@ -173,3 +173,12 @@ p {
     max-width: 50%;
     max-height: 50%;
 }
+
+/* BONUS*/
+
+img:hover {
+   transform: scale(1.1); /*zoom*/
+   transform: rotate(10deg); /*ruota 10 gradi*/
+   box-shadow: 10px 10px 5px rgba(197, 192, 192, 0.3); /*obra*/
+   cursor: pointer; /* cambia il puntatore */
+}
