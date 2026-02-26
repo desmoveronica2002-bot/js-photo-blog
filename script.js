@@ -56,7 +56,7 @@ fetch(endpoint)
 const overlay = document.getElementById('overlay');
 const bottoneChiudiOverlay = document.getElementById('chiudiOverlay');
 
-overlay.style.display = "block"; 
+overlay.style.display = "none"; 
 
 
 // Chiudi overlay
