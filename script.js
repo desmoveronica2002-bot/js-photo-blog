@@ -45,7 +45,7 @@ function markup({ title, date, url }) {
         <div class="involucro_card">
             <img src="./img/pin.svg" alt="pallino" class="pallino">
             <div class="card card-body padding_basso">
-                <img src="${url}" alt="${title}" class="imgOverlay">
+                <img src="${url}" alt="${title}" class="listaImmagini">
                 <div class="card-body">
                     <p class="data">${date}</p>
                     <p class="titolo">${title}</p>
@@ -75,13 +75,22 @@ fetch(endpoint)
 // PARTE 2     
 
 //facciamo sì che cliccando una qualunque foto. L’overlay ricompaia
-    const immaginiOverlay = document.querySelectorAll('.imgOverlay');
+const immaginiOverlay = document.querySelectorAll('.listaImmagini');
 
-    immaginiOverlay.forEach(img => {
-        img.addEventListener('click', () => {
-            overlay.style.display = "block";
-        });
+//    immaginiOverlay.forEach(img => {
+//        img.addEventListener('click', () => {
+//            overlay.style.display = "block";
+//        });
+//    });
+
+const immagineOverlay = document.getElementById('overlayImg');
+
+immaginiOverlay.forEach(img => {
+    img.addEventListener('click', () => {
+        overlay.style.display = "block";
+        immagineOverlay.src = img.src; // prende l'immagine cliccata
     });
+});
 
    
 
